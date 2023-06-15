@@ -1,5 +1,7 @@
 # GC JIT 抑制
 
+思路源自抖音技术分享
+
 适配 Android 多版本
 
 通过 hook ConcurrentGCTask 和 JitCompileTask 实现相应的抑制功能，降低启动阶段 CPU 占用，以取得所谓的启动数值上的优化
@@ -9,6 +11,8 @@
 **找到 GC 和 JIT 对应 Task 的 函数符号，然后替换为我们自定义的方法**
 
 有类似的 github 开源库 [gc抑制](https://github.com/RicardoJiang/android-performance/blob/main/startup-optimize/src/main/cpp/StartUpOptimize.cpp)
+
+其实现基本同抖音技术分享，通过查找函数地址，并找虚函数，然后替换为自定义方法。  
 
 但是其实现问题很多，一个是 libart 版本路径问题，一个是原方法为成员方法，方法参数根本对不齐的问题
 
