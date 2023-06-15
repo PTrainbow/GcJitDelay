@@ -94,7 +94,6 @@ Java_com_ptrain_art_ARTHook_init(JNIEnv *env, jobject thiz) {
 
     if (androidApi < __ANDROID_API_N__ || androidApi >= 34) { // Android  < 7  > 13 先不管
         LOGE("android api > 33 || < 24, return!");
-        return;
     } else { // Android 7 - 13
         jitDelay();
     }
