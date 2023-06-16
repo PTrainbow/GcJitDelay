@@ -31,5 +31,4 @@ ConcurrentGCTask 只是众多 GC 类型中的一种，即使我们 hook 住，�
 JIT 发生次数较为频繁，可能收益更多一些
 
 #
-你的 star⭐️  
-我的动力
+觉得 ok 给个 star ⭐️ 把！
