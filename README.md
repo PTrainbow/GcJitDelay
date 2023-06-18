@@ -20,7 +20,8 @@
 
 当然你也可以使用 [xdl](https://github.com/hexhacking/xDL) 来达到上述仓库中 enhanced_dlfcn 相应功能，也不用考虑 libart 路径问题
 
-注意，inlinehook 和 xdl 只支持 armeabi-v7a v8a，老旧机器无效
+
+`注意，inlinehook 和 xdl 只支持 armeabi-v7a v8a，老旧机器无效，armeabi 架构目前已经十分十分稀少`
 
 ## 补充
 
