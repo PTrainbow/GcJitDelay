@@ -20,6 +20,8 @@
 
 当然你也可以使用 [xdl](https://github.com/hexhacking/xDL) 来达到上述仓库中 enhanced_dlfcn 相应功能，也不用考虑 libart 路径问题
 
+注意，inlinehook 和 xdl 只支持 armeabi-v7a v8a，老旧机器无效
+
 ## 补充
 
 ConcurrentGCTask 只是众多 GC 类型中的一种，即使我们 hook 住，并且不调用原方法(相当于废掉 ConcurrentGC)，应用也不会 OOM，因为还有其他 GC 可以工作，至少有 Alloc GC
